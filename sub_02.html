@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Quiznos</title>
+    
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    
+    
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <script defer src="script/script.js"></script>   
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="script/jquery.easeScroll.js"></script>
+    
+</head>
+
+<body>
+    <div class="cursor2"></div>
+    <header>
+        <div class="headerwrap">
+            <a class="logo" href="index.html"><img src="img/logo.png"></a>
+        <ul class="menu">
+            <li><a href="index.html">퀴즈노스 소개</a></li>
+            <li><a href="sub_01.html">메뉴안내</a></li>
+            <li><a href="sub_02.html">매장찾기</a></li>
+            <li><a href="sub_03.html">프랜차이즈</a></li>
+            <li><a href="sub_04.html">맴버십</a></li>
+        </ul>
+    </div>
+    </header>
+
+   
+<div class="sub02_wrap">
+    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42579.68520329745!2d127.06550198136962!3d37.5137219901991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5735c55eb25%3A0xa30c845b4ef453d8!2zUVVJWk5PUyBTVUIg67O47IKs!5e0!3m2!1sko!2skr!4v1662118531237!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+    <!-- * 카카오맵 - 지도퍼가기 -->
+<div class="map">
+    <!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1663324607925" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1663324607925",
+		"key" : "2bqjx",
+		"mapWidth" : "100%",
+		"mapHeight" : "950px"
+	}).render();
+</script>
+</div>
+
+<div class="sub02_wrap_wrap">
+    <div class="search_store">
+        <h2>매장찾기</h2>
+
+        <div class="form_search">
+            <form id="mapFrm" method="POST" name="mapFrm" onsubmit="return shopMap.search()">
+                <input id="keyword" maxlength="30" placeholder="지역 또는 매장명 입력" type="text" value="">
+                <a class="btn_search" href="javascript:void(0)">
+                    <img src="img/bt_search.png" alt="검색버튼">
+                </a>
+            </form>
+            <p>*운영시간은 매장 사정에 따라 변경될 수 있습니다.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<footer>
+    <div class="footer_logo">
+        <img src="img/logo_w 4.svg" alt="하단로고">
+    </div>
+    <div class="footer_01">
+        <ul>
+            <li>서울시 강남구 테헤란로 금강빌딩 15층</li>
+            <li>일반문의 02-425-3131 | event@quiznos.co.kr</li>
+            <li>가맹문의 1899-9795 | ​ franchise@quiznos.co.kr</li>
+        </ul>
+        <div class="copy">
+        Copyright © 2016 USUMB Quiznos korea. All rights reserved. 
+    </div>
+    </div>
+    <div class="footer_02">
+        <ul>
+            <li><a href="javascript:void(0)">개인정보취급방침</a></li>
+            <li><a href="javascript:void(0)">회원약관</a></li>
+            <li>
+                <ul class="footer_sns">
+                    <li><a href="https://www.instagram.com/accounts/login/?next=/quiznoskorea/"><img src="img/instagram-with-circle.svg" alt="인스타그램"></a></li>
+                    <li><a href="https://www.facebook.com/Quiznoskorea"><img src="img/facebook.svg" alt="페이스북"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCoxUnVP13xFN4hW3kh5u3zg"><img src="img/youtube-with-circle.svg" alt="유튜브"></a></li>
+                    <li><a href="https://blog.naver.com/subquiznos"><img src="img/twitter-with-circle.svg" alt="트위터"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+<script>
+    AOS.init();
+  </script>
+ 
+
+				
+</html>
+
